@@ -1078,7 +1078,7 @@
 <div class="bottom-bar">
   <button class="btn btn-tertiary" onclick="saveDraft()">💾 حفظ</button>
   <button class="btn btn-secondary" onclick="loadDraft()">📂 تحميل</button>
-  <button class="btn btn-primary" onclick="generateReport()">📄 توليد Word</button>
+  <button class="btn btn-primary" onclick="generateReport()">📄 تصدير Word</button>
 </div>
 
 <!-- ========== Toast ========== -->
@@ -2152,7 +2152,7 @@ function loadDraft() {
   }, 50);
 }
 
-// ========== توليد Word ==========
+// ========== تصدير Word ==========
 function base64ToUint8Array(base64) {
   const binary = atob(base64);
   const bytes = new Uint8Array(binary.length);
@@ -2356,7 +2356,7 @@ function renderArchive() {
         <div class="archive-meta">آخر حفظ: ${lastSavedStr}</div>
         <div class="archive-actions">
           <button class="archive-btn archive-btn-open" onclick="openArchiveDraft(${d.year}, ${d.month})">📂 فتح</button>
-          <button class="archive-btn archive-btn-generate" onclick="generateFromArchive(${d.year}, ${d.month})">📄 توليد Word</button>
+          <button class="archive-btn archive-btn-generate" onclick="generateFromArchive(${d.year}, ${d.month})">📄 تصدير Word</button>
           <button class="archive-btn archive-btn-delete" onclick="deleteArchive(${d.year}, ${d.month})">🗑️</button>
         </div>
       </div>
